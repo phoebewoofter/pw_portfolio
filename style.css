@@ -1,7 +1,10 @@
 * {
     margin: 0px 0px 0px 0px;
     font-size: 16px;
+    font-family: "Oswald", sans-serif;
 }
+
+/*Navigation and Header*/
 
 .header {
     color: hsl(0, 100%, 50%);
@@ -98,6 +101,8 @@ p {
     font-size: 3rem;
 }
 
+/*Graphic Elements in Header*/
+
 .headshot {
     position: absolute;
     left: 56vw;
@@ -140,4 +145,34 @@ p {
     z-index: 0;
     left: 70vw;
     top: 35vh;
+}
+
+/*Clients*/
+.clients {
+    position: relative;
+    top: 20vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 3rem;
+}
+
+/*Skills*/ 
+.skills {
+    position: relative;
+    top: 20vh;
+    padding: 2rem;
+}
+
+/*About*/
+.about_me {
+    position: relative;
+    top: 20vh;
+    padding: 2rem;
+}
+/*Footer*/
+footer {
+    position: relative;
+    top: 20vh;
+    padding: 2rem;
+    
 }
