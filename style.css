@@ -1,0 +1,143 @@
+* {
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+}
+
+.header {
+    color: hsl(0, 100%, 50%);
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.background_color {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    left: 0rem;
+}
+
+.box1 {
+    box-sizing: border-box;
+    height: 70vh;
+    width: 60vw;
+    z-index: 0;
+    background-color: #f6d9f7;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.box2 {
+    box-sizing: border-box;
+    height: 70vh;
+    width: 40vw;
+    z-index: 0;
+    background-color: hsl(0, 100%, 50%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+}
+
+.name {
+    padding: 2rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.navigation {
+    padding: 2rem;
+}
+
+.options {
+    color: #f6d9f7;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; 
+    column-gap: 2.5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.intro_to_me {
+    padding-top: 6rem;
+    padding-left: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+.intro_copy {
+    box-sizing: border-box;
+    width: 41vw;
+    height: auto;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.code{
+    font-family: "DotGothic16", monospace, sans-serif;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+
+.headshot {
+    position: absolute;
+    left: 56vw;
+    top: 10vh;
+    z-index: 2;
+}
+
+.box3 {
+    box-sizing: border-box;
+    width: 25vw;
+    height: 30vh;
+    background-color: #f6d9f7;
+    position: absolute;
+    left: 60vw;
+    top: 14vh;
+    z-index: 1;
+}
+
+.purple_zag {
+    position: absolute;
+    left: 87vw;
+    top: 20vh;
+}
+
+.red_zag {
+    position: absolute;
+    left: 50vw;
+    top: 40vh;
+}
+
+#mix_dots {
+    position: absolute;
+    z-index: 0;
+    top: 5vh;
+    left: 46.3176vw;
+}
+
+#purple_dots {
+    position: absolute;
+    z-index: 0;
+    left: 70vw;
+    top: 35vh;
+}
