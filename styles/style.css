@@ -67,6 +67,14 @@ nav {
     position: relative;
 }
 
+.other_nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    background-color: hsl(0, 100%, 50%);
+}
+
 a {
     text-decoration: none;
     color: #f6d9f7;
@@ -82,10 +90,15 @@ a:hover {
 .name {
     padding: 2rem;
     font-family: "Oswald", sans-serif;
+    color: hsl(0, 100%, 50%);
 }
 
 .navigation {
     padding: 2rem;
+}
+
+.contact_nav {
+    background-color: hsl(0, 100%, 50%);
 }
 
 .options {
@@ -234,6 +247,17 @@ p {
 footer {
     position: relative;
     top: 20vh;
+    padding: 2rem;
+    background-color: hsl(0, 100%, 50%);
+    color: #f6d9f7;
+}
+
+.other_footer {
+    position: absolute;
+    top: 90%;
+    bottom: 0rem;
+    width: 100%;
+    height: auto;
     padding: 2rem;
     background-color: hsl(0, 100%, 50%);
     color: #f6d9f7;
