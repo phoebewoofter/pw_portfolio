@@ -4,16 +4,28 @@
     font-family: "Oswald", sans-serif;
 }
 
+@keyframes scrollBar {
+    100% {
+        transform: translate(100%);
+    }
+}
+
+body {
+    display: grid;
+    grid-auto-rows: auto;
+    background-color:#f6d9f7;
+}
 /*Navigation and Header*/
 
 .header {
     color: hsl(0, 100%, 50%);
     box-sizing: border-box;
-    height: auto;
+    height: 50vh;
     width: 100%;
     margin-top: 0;
     z-index: 1;
     position: relative;
+    display: block;
 }
 
 .background_color {
@@ -53,6 +65,18 @@ nav {
     justify-content: space-between;
     z-index: 1;
     position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #f6d9f7;
+}
+
+a:hover {
+    background-color: #f6d9f7;
+    color:hsl(0, 100%, 50%);
+    border-radius: 50%;
+    padding: 0.5rem;
 }
 
 .name {
@@ -147,8 +171,27 @@ p {
     top: 35vh;
 }
 
+/*Scroll*/
+#banner {
+    background-color: hsl(0, 100%, 50%);
+    color: #f6d9f7;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 20vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 3;
+}
+
+#banner p {
+    font-family: "Oswald", sans-serif;
+    animation: scrollBar 10s linear infinite;
+}
+
 /*Clients*/
 .clients {
+    display: none;
     position: relative;
     top: 20vh;
     padding: 2rem;
@@ -158,6 +201,7 @@ p {
 
 /*Skills*/ 
 .skills {
+    display: none;
     position: relative;
     top: 20vh;
     padding: 2rem;
@@ -168,11 +212,29 @@ p {
     position: relative;
     top: 20vh;
     padding: 2rem;
+    background-color: #f6d9f7;
+    display: block;
 }
+
+.about_me p {
+    padding: 1rem;
+}
+
+.about_me h2 {
+    padding-left: 1rem;
+}
+
+.code_about {
+    font-family: "DotGothic16", monospace, sans-serif;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}  
+
 /*Footer*/
 footer {
     position: relative;
     top: 20vh;
     padding: 2rem;
-    
+    background-color: hsl(0, 100%, 50%);
+    color: #f6d9f7;
 }
