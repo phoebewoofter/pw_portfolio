@@ -4,17 +4,12 @@
     font-family: "Oswald", sans-serif;
 }
 
-@keyframes scrollBar {
-    100% {
-        transform: translate(100%);
-    }
-}
-
 body {
     display: grid;
     grid-auto-rows: auto;
     background-color:#f6d9f7;
 }
+
 /*Navigation and Header*/
 
 .header {
@@ -185,6 +180,15 @@ p {
 }
 
 /*Scroll*/
+@keyframes scrollBar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 #banner {
     background-color: hsl(0, 100%, 50%);
     color: #f6d9f7;
@@ -195,11 +199,22 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem;
     z-index: 3;
+    display: flex;
+    gap: 7rem;
+    flex-flow: row nowrap;
+    overflow: hidden;
 }
+
+#banner .scrolling {
+    display: flex;
+    gap: 7rem;
+    white-space: nowrap;
+    animation: scrollBar 10s linear infinite;
+}
+
 
 #banner p {
     font-family: "Oswald", sans-serif;
-    animation: scrollBar 10s linear infinite;
 }
 
 /*Clients*/

@@ -12,3 +12,6 @@ function scrollBack() {
 
 scrollBar.onmouseover = scrollChange;
 scrollBar.onmouseout = scrollBack;
+
+
+
